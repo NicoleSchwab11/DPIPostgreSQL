@@ -1,4 +1,4 @@
-package com.dpi.primeraapi;
+package com.dpi.primeraapi.controller;
 
 import java.time.LocalDate;
 

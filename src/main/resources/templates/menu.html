@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Lateral</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="top-bar">
+    <p class="registrarse">SOLICITAR TURNO</p>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+  <aside id="sideMenu" class="side-menu">
+    <button class="menu-btn">Contacto</button>
+    <button class="menu-btn">Turnos</button>
+    <button class="menu-btn">¿Quiénes somos?</button>
+    <button class="menu-btn">Especialistas</button>
+  </aside>
+
+  <main class="container">
+    <div class="logo">
+      <img src="logo.png" alt="Logo Valle Medio">
+      <h2>Diagnóstico Por Imagen <br><span>VALLE MEDIO</span></h2>
+    </div>
+
+    <button class="btn-principal">VER MIS TURNOS</button>
+    <button class="btn-principal">VER TURNO</button>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

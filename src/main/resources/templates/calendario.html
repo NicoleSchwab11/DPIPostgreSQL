@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedir Turno</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Iconos de menú (hamburguesa) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- Menú hamburguesa fijo -->
+  <header class="top-bar">
+    <i class="fa-solid fa-bars menu-icon"></i>
+  </header>
+  <div class="container">
+    <!-- Barra superior -->
+    <header class="header">
+      <img src="../assets/LOGO DPI.jpg" alt="Logo" class="logologin">
+    </header>
+
+    <!-- Texto informativo -->
+    <div class="calendar-container">
+
+      <div class="legend">
+        <span class="legend-item ocupado"> NO disponible</span>
+        <span class="legend-item disponible">Lugares disponibles</span>
+      </div>
+
+      <!-- Header con mes y botones -->
+      <div class="calendar-header">
+        <button id="prev">◀</button>
+        <h3 id="month-year"></h3>
+        <button id="next">▶</button>
+      </div>
+
+      <!-- Encabezado de los días -->
+      <div class="weekdays">
+        <div>Lun</div>
+        <div>Mar</div>
+        <div>Mié</div>
+        <div>Jue</div>
+        <div>Vie</div>
+        <div>Sáb</div>
+        <div>Dom</div>
+      </div>
+
+      <!-- Contenedor de días dinámicos -->
+      <div class="calendar" id="calendar"></div>
+
+      <!-- 🔹 Botón corregido -->
+      <button type="button" class="btn" onclick="window.location.href='horarios.html'">
+      ELEGIR TURNO
+      </button>
+
+      <!-- Botón volver -->
+      <button type="button" class="btn" onclick="window.location.href='estudio.html'">VOLVER</button>
+    </div>
+
+    <footer>
+      2025 Turnos Online - Todos los derechos reservados
+    </footer>
+  </div>
+
+  <script src="../html/calendario.js"></script>
+</body>
+</html>
